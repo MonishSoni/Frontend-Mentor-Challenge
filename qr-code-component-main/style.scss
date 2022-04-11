@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dongle', sans-serif;
+}
+
+$White : hsl(0, 0%, 100%);
+$Lightgray : hsl(212, 45%, 89%);
+$Grayishblue : hsl(220, 15%, 55%);
+$Darkblue : hsl(218, 44%, 22%);
+
+@mixin flexr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }  
+
+
+.container {
+  @include flexr;
+  height: 100vh;
+  width: 100%;
+  background-color: $Lightgray;
+
+  .card {
+    @include flexr;
+    width: 250px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: $White;
+    text-align: center;
+
+    img{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+     
+    h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 20px;
+        padding: 0 10px;
+        letter-spacing: 1px;
+        margin:0 0 10px 0;
+        color: $Darkblue;
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+        line-height: 15px;
+        padding: 0 15px;
+        color: $Grayishblue;
+    }
+
+  }
+
+}
+
