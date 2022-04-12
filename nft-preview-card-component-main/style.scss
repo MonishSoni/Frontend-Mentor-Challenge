@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+$Softblue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// (main BG)
+$Verydarkblue1: hsl(217, 54%, 11%);
+// (card BG)
+$Verydarkblue2: hsl(216, 50%, 16%);
+// (line)
+$Verydarkblue3: hsl(215, 32%, 27%);
+// white
+$White: hsl(0, 0%, 100%);
+
+@mixin flexstyle($dir, $jus) {
+  display: flex;
+  justify-content: $jus;
+  align-items: center;
+  flex-direction: $dir;
+}
+
+.con {
+  @include flexstyle(row, center);
+  height: 100vh;
+  width: 100%;
+  background-color: $Verydarkblue1;
+
+  .card {
+    @include flexstyle(column, flex-start);
+    width: 300px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: $Verydarkblue2;
+
+    .img img {
+      width: 100%;
+      border-radius: 5px;
+      
+    }
+
+    .img{
+        position: relative;
+        width: 260px;
+        height: 260px;
+
+
+        .hide{
+            position: absolute;
+            width: 30px;
+            top: 45%;
+            right: 45%;
+            display: none;
+        }
+
+        &:hover .hide{
+            display: block;
+        }
+
+    }
+
+    .img::after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $Cyan;
+        display: none;
+        border-radius: 5px;
+    }
+
+    .img:hover::after{
+            display: block;
+            opacity: 0.5;
+    }
+ 
+   
+
+   
+
+    
+
+    h3 {
+      color: $White;
+       text-align: left;
+       width: 100%;
+       margin: 10px 0;
+
+       &:hover{
+           color: $Cyan;
+       }
+    }
+
+ 
+
+    p{
+        color: $Softblue;
+    }
+
+    .positem {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1px solid $Verydarkblue3;
+      margin: 15px 0 20px 0;
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        color: $Softblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      p:first-child{
+          color: $Cyan;
+      }
+    }
+ 
+    hr {
+      width: 100%;
+      border: 1px solid $Verydarkblue3;
+    }
+
+    .avatar {
+      margin: 10px;
+      color: $White;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 14px;
+
+      img {
+        width: 30px;
+      }
+
+      span {
+        color: $Softblue;
+      }
+
+      &:hover{
+          color: $Cyan;
+      }
+    }
+  }
+}
