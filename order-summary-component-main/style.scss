@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue: hsl(245, 75%, 52%);
+$Verypaleblue: hsl(225, 100%, 98%);
+$Desaturatedblue: hsl(224, 23%, 55%);
+$Darkblue: hsl(223, 47%, 23%);
+
+.con {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $Paleblue;
+  font-family: "Red Hat Display", sans-serif;
+
+  .card {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $Verypaleblue;
+    border-radius: 0 0 8px 8px;
+
+    * {
+      width: 100%;
+    }
+
+    .imgcon {
+      img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    .textcon {
+      padding: 4% 8%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .plancon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        background-color: $Paleblue;
+        border: 1px solid transparent;
+        padding: 20px 15px;
+        margin: 20px 0;
+        border-radius: 8px;
+
+        img {
+          width: 50px;
+        }
+        p {
+          margin: 0;
+        }
+        p span {
+          color: $Darkblue;
+          font-weight: 700;
+        }
+        .light{
+            font-weight: 400;
+            color: $Desaturatedblue;
+        }
+
+        .blue{
+            text-decoration: underline;
+            color: $Brightblue;
+        }
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 28px;
+        margin: 20px 0 15px 0;
+      }
+      h3,
+      p {
+        width: 100%;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: $Desaturatedblue;
+        font-weight: 700;
+      }
+
+      .btn{
+          padding: 15px 20px;
+          background-color: $Brightblue;
+          outline: none;
+          border: none;
+          color: $Verypaleblue;
+          border-radius: 5px;
+          margin: 10px 0 20px 0;
+      }
+    }
+  }
+}

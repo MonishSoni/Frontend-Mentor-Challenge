@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.con {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.con .card {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f5f7ff;
+  border-radius: 0 0 8px 8px;
+}
+
+.con .card * {
+  width: 100%;
+}
+
+.con .card .imgcon img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.con .card .textcon {
+  padding: 4% 8%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.con .card .textcon .plancon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #e0e8ff;
+  border: 1px solid transparent;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.con .card .textcon .plancon img {
+  width: 50px;
+}
+
+.con .card .textcon .plancon p {
+  margin: 0;
+}
+
+.con .card .textcon .plancon p span {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.con .card .textcon .plancon .light {
+  font-weight: 400;
+  color: #7280a7;
+}
+
+.con .card .textcon .plancon .blue {
+  text-decoration: underline;
+  color: #3829e0;
+}
+
+.con .card .textcon h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 20px 0 15px 0;
+}
+
+.con .card .textcon h3,
+.con .card .textcon p {
+  width: 100%;
+  text-align: center;
+}
+
+.con .card .textcon p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #7280a7;
+  font-weight: 700;
+}
+
+.con .card .textcon .btn {
+  padding: 15px 20px;
+  background-color: #3829e0;
+  outline: none;
+  border: none;
+  color: #f5f7ff;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+}
+/*# sourceMappingURL=style.css.map */
